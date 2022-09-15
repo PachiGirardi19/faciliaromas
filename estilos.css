@@ -49,7 +49,7 @@ body{
 	background-color: #890F34;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
 
 	.grid_container{
 
@@ -64,11 +64,12 @@ body{
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 991px) {
 	.grid_container{
 		grid-template: 
 		"header 	header 	header" 	100px 
-		"navbar    	main 	main" 	auto
+		"navbar    	navbar 	navbar" 	    auto
+		"main       main    main"
 		"footer 	footer 	footer" 	100px /
 		 400px 		auto 	200px;
 	}
