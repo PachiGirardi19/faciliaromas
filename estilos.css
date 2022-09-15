@@ -1,0 +1,86 @@
+@import url('<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	font-family: font-family: 'Merriweather', serif;
+	font-size: 1.2rem;
+	min-height: 100%; 
+	 
+}
+
+.grid_container{
+	display: grid;
+	grid-template: 
+	"header" 100px
+	"navbar" 50px
+	"main"	100px
+	"footer" 30px
+	;
+}
+
+.header{
+	grid-area: header;
+	background-color: #310214;
+}
+
+
+.navbar{
+	grid-area: navbar;
+	background-color: #890F34;
+}
+
+.main{
+	grid-area: main;
+	background-color: #FFFFFF;
+}
+
+
+.footer{
+	grid-area: footer;
+	background-color: #890F34;
+}
+
+@media (min-width: 600px) {
+
+	.grid_container{
+
+		grid-template: 
+		"header 	header" 	100px 
+		"navbar    	navbar"    	50px
+		"main   	main" 		auto
+		"footer 	footer" 	100px /
+		 200px 		auto;
+ 	}
+
+}
+
+
+@media (min-width: 900px) {
+	.grid_container{
+		grid-template: 
+		"header 	header 	header" 	100px 
+		"navbar    	main 	main" 	auto
+		"footer 	footer 	footer" 	100px /
+		 400px 		auto 	200px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.grid_container{
+		grid-template: 
+		"header 	header 	header" 	100px 
+		"navbar    	navbar  navbar" 	50px
+		"main       main    main"       auto
+		"footer 	footer 	footer" 	100px /
+		 400px 		auto 	200px;
+	}
+}
